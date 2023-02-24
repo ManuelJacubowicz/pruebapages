@@ -1,0 +1,43 @@
+<p>Cuanto es 2 + 2 ?</p>
+
+<div id="Q17739ANS">
+
+    <div id class>
+
+        <input></input>
+
+    </div>
+
+ 
+
+</div>
+
+<div class="hola" id="1">
+    Muy bien!
+</div>
+<div class="hola" id="2">
+    Mal
+</div>
+<script>
+
+var Pregunta1 = this.document.getElementById("Q17739ANS").firstElementChild
+var Pregunta8 = this.document.getElementById("1")
+var Pregunta9 = this.document.getElementById("2")
+var Pregunta1_2 = Pregunta1.firstElementChild
+
+var Pregunta1_Text = Pregunta1_2.value
+
+
+Pregunta8.style.display ="none" 
+Pregunta9.style.display ="none"
+
+if (Pregunta1_Text == "2" ){
+
+    Pregunta8.style.display ="block" 
+    Pregunta9.style.display ="none"
+}else{
+    Pregunta8.style.display ="none"
+    Pregunta9.style.display ="block" 
+}
+
+</script>
